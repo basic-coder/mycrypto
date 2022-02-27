@@ -1,0 +1,75 @@
+.crypto__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem;
+}
+.crypto__contact .crypto__heading{
+    color: var(--green);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.crypto__contact .crypto__heading span{
+    color: var(--black);
+}
+.crypto__contact .crypto__form {
+  margin: 1rem auto;
+  max-width: 70rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+.crypto__contact form .crypto__box {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  text-transform: none;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+.crypto__contact .crypto__box:nth-child(1) {
+  margin-right: 2.5rem;
+}
+.crypto__contact .crypto__box:nth-child(1),
+.crypto__contact .crypto__box:nth-child(2) {
+  width: 48%;
+}
+.crypto__contact textarea {
+  height: 20rem;
+  resize: none;
+}
+.crypto__contact form .crypto__box:focus {
+  box-shadow: var(--box-shadow-inset);
+}
+.crypto__contact .crypto__btn {
+  padding: 1rem 1.5rem;
+  background: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  text-transform: none;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+.crypto__thank{
+  box-shadow: var(--box-shadow);
+  font-weight: 700;
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .crypto__contact .crypto__box:nth-child(1),
+  .crypto__contact .crypto__box:nth-child(2) {
+    width: 100%;
+  }
+  .crypto__contact {
+    min-height: 100vh;
+  }
+}

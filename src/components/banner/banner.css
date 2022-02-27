@@ -1,0 +1,40 @@
+.banner{
+    background: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bannerContent{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    align-items: center;
+    justify-content:space-around;
+}
+.bannerTagline{
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.bannerTagline h2{
+    color: var(--green);
+    font-weight: bold !important;
+    margin-bottom: 15px;
+    font-family: 'poppins',sans-serif;
+    font-size: 5rem;
+}
+.bannerTagline h6{
+    color: var(--black);
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'poppins',sans-serif;
+}
+@media screen and (max-width:991px){
+    .banner{
+        margin-top: 10vh;
+    }
+}

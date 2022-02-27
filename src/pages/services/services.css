@@ -1,0 +1,61 @@
+.crypto__services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+.crypto__services-heading{
+    font-size: 3rem;
+    color: var(--green);
+    margin: 4rem 0;
+}
+
+.crypto__services-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+    width: 80%;
+}
+.crypto__services-box{
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.crypto__services-box-icon{
+    font-size: 4rem;
+    padding-bottom: 5rem;
+    color: var(--black);
+}
+.crypto__services-box h3{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: var(--black);
+}
+.crypto__services-box p{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
+.crypto__services-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    box-shadow: var(--box-shadow);
+    z-index: -1;
+    clip-path: circle(9rem at 5% 0%);
+    transition: .3s linear;
+}
+.crypto__services-box:hover::before{
+    clip-path: circle(100%);
+}
+.crypto__services-box:hover > *{
+    color: #fff;
+}

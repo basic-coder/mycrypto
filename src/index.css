@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;800&family=Roboto:wght@100;300;400;500;700;900&family=Tinos:wght@400;700&display=swap');
+:root{
+  --green:#7500ff;
+  --black:#444;
+  --light-color:#777;
+  --bg-color:#e6e6e6;
+  --border: 1rem solid rgba(0,0,0,.2);
+  --box-shadow: .4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+  --box-shadow-inset: .4rem .4rem 1rem #ccc inset,
+                -.4rem -.4rem 1rem #fff inset;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden ;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+body{
+  background-color: var(--bg-color);
+}
+body.active {
+  --black:#fff;
+  --light-color:#ddd;
+  --bg-color:#222;
+  --border: 1rem solid rgba(0,0,0,.4);
+  --box-shadow: .4rem .4rem 1rem #111,
+                -.4rem -.4rem 1rem #333;
+  --box-shadow-inset: .4rem .4rem 1rem #111 inset,
+                -.4rem -.4rem 1rem #333 inset;
+}
+ 
+.section__padding {
+  padding: 4rem 6rem;
+}
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+@media screen and (max-width: 700px){
+  .section__padding{
+      padding: 4rem;
+  }
+  .section__margin{
+      margin: 4rem;
+  }
+}
+@media screen and (max-width: 550px){
+  .section__padding{
+      padding: 4rem 2rem;
+  }
+  .section__margin{
+      margin: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width:991px) {
+    html{
+      font-size: 55%;
+    }
+    body{
+      padding-left: 0;
+    }
+}
+@media screen and (max-width:450px) {
+  html{
+    font-size: 50%;
+  }
 }

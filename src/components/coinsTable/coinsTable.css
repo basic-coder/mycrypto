@@ -1,0 +1,36 @@
+.tableRow{
+    cursor: pointer;
+    font-family: 'Montserrat';
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+}
+.tableRow:hover{
+    box-shadow: var(--box-shadow-inset);
+}
+.crypto__search{
+    color: var(--black);
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+.crypto__search label{
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: var(--black) !important;
+}
+.crypto__search label:focus{
+    border: none;
+    outline: none;
+    color: var(--black) !important;
+}
+.MuiTableCell-root {
+    border-bottom: none !important;
+}
+.MuiTableContainer-root {
+    box-shadow: var(--box-shadow);
+}
+.MuiPaginationItem-root {
+    color: var(--black) !important;
+    box-shadow: var(--box-shadow);
+}
