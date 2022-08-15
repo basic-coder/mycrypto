@@ -8,6 +8,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@material-ui/core";
+import { Chart as ChartJS } from 'chart.js/auto'
 import { useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import axios from "axios";

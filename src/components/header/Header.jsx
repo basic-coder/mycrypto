@@ -32,11 +32,11 @@ const Header = () => {
         <h3>Basic Coder</h3>
         </Link>
         <div className="crypto__navbar">
-          <Link to="/">Home</Link>
-          <Link to="/wallet">Wallet</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/transactions">Transactions</Link>
-          <Link to="contact">Contact</Link>
+          <Link onClick={()=> setToggleMenu(true)} to="/">Home</Link>
+          <Link onClick={()=> setToggleMenu(true)} to="/wallet">Wallet</Link>
+          <Link onClick={()=> setToggleMenu(true)} to="/services">Services</Link>
+          <Link onClick={()=> setToggleMenu(true)} to="/transactions">Transactions</Link>
+          <Link onClick={()=> setToggleMenu(true)} to="contact">Contact</Link>
           
           {
               modeToggle ? (
